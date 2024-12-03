@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  width: 360px;
+  height: 280px;
+  box-sizing: border-box;
+  background-image: url('./../assets/pixel_background.gif');
+  background-position: -20px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Pixelify Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  padding: 16px;
+  width: 100%;
+}
+
+#character-name {
+  color: white;
+  animation: ChangeShadow 1s linear infinite;
+}
+
+#input {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+#input input {
+  width: 100%;
+  filter: opacity(80%);
+}
+
+#input input:focus {
+  border: 1px solid rgb(81, 81, 81);
+  outline: 1px solid rgb(81, 81, 81);
+  padding: 4px;
+  filter: opacity(80%);
+}
+
+#input button {
+  border-radius: 8px;
+  padding: 4px;
+}
+
+#list {
+  margin-top: 4px;
+  filter: opacity(80%);
+  background-color: whitesmoke;
+  padding: 4px;
+  height: 180px;
+}
+
+@keyframes ChangeShadow {
+  0% {
+    text-shadow: 2px 2px #640d5f;
+  }
+  25% {
+    text-shadow: 2px 2px #d91656;
+  }
+  50% {
+    text-shadow: 2px 2px #ee66a6;
+  }
+  75% {
+    text-shadow: 2px 2px #26355d;
+  }
+  100% {
+    text-shadow: 2px 2px #a0153e;
+  }
+}

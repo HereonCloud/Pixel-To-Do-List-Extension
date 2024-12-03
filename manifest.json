@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Pixel - To Do List",
+  "version": "1.0.0",
+  "description": "A to do list that keeps track of your progress but pixelated",
+  "action": {
+    "default_popup": "./character.html"
+  },
+  "permissions": ["storage"]
+}
