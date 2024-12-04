@@ -36,14 +36,14 @@ body {
 
 #input input {
   width: 100%;
-  filter: opacity(80%);
+  filter: opacity(60%);
 }
 
 #input input:focus {
   border: 1px solid rgb(81, 81, 81);
   outline: 1px solid rgb(81, 81, 81);
   padding: 4px;
-  filter: opacity(80%);
+  filter: opacity(60%);
 }
 
 #input button {
@@ -57,6 +57,16 @@ body {
   background-color: whitesmoke;
   padding: 4px;
   height: 180px;
+  overflow-y: scroll;
+}
+#list li {
+  padding: 4px;
+  border-bottom: 1px solid #26355d;
+  cursor: pointer;
+}
+
+#list li::marker {
+  color: white;
 }
 
 @keyframes ChangeShadow {
